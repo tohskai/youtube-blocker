@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "YouTube Video Redirector",
+  "version": "1.2",
+  "description": "Redirects YouTube videos based on duration and Shorts settings",
+  "permissions": [
+    "webNavigation",
+    "tabs",
+    "storage",
+    "https://*.youtube.com/*"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "options_ui": {
+    "page": "options/options.html",
+    "open_in_tab": false
+  },
+  "browser_action": {
+    "default_title": "Video Redirector Settings"
+  }
+}
